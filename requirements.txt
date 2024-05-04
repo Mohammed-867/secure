@@ -5,4 +5,4 @@ Flask-Markdown==0.3
 Flask-MySQLdb==0.2.0
 Flask-WeasyPrint==0.6
 Werkzeug==1.0.1
-gunicorn==19.9.0 
+gunicorn==22.0.0
