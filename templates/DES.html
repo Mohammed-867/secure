@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Security</title>
+
+    <style>
+        body {
+          background-color: rgb(37, 18, 121);
+          font-family: "Poppins", sans-serif;
+          font-weight: 400;
+          font-style: normal;
+          color: rgba(255, 255, 255, 0.884);
+          text-align: justify;
+          font-size: 21px;
+        }
+        
+        h1 {
+          color: rgb(255, 255, 255);
+          text-align: center;
+          font-family: "Poppins", sans-serif;
+          font-weight: 400;
+          font-style: normal;
+        } 
+        .imortance-cyber{
+          margin : 0px 10rem 0px 10rem
+        }
+        
+        </style>
+
+</head>
+<body>
+
+<h1>Triple DES (3DES) Overview</h1><br>
+<div class="imortance-cyber">
+
+<p>Triple DES (3DES), also known as Triple Data Encryption Algorithm (TDEA), is a symmetric-key block cipher encryption algorithm that applies the Data Encryption Standard (DES) cipher multiple times to enhance security. Here's an overview of 3DES and its key components:</p>
+<h2>What is 3DES?</h2>
+<p><strong>Symmetric-Key Encryption:</strong> Like DES, 3DES is a symmetric-key encryption algorithm, meaning it uses the same secret key for both encryption and decryption. This key must be kept confidential between the communicating parties.</p>
+<p><strong>Block Cipher:</strong> 3DES operates on fixed-size blocks of plaintext and ciphertext, typically 64 bits in length, just like DES. However, it applies the DES cipher multiple times to each block to increase security.</p>
+<p><strong>Triple Encryption:</strong> 3DES encrypts plaintext by applying the DES cipher three times in a sequence: encryption with one key, decryption with another key, and encryption with a third key. This process is often referred to as "encrypt-decrypt-encrypt" (EDE) mode.</p>
+<p><strong>Key Length:</strong> 3DES supports key lengths of 56, 112, or 168 bits, depending on whether single, double, or triple keying is used. The effective key length of 3DES is reduced to 56 bits when using a single key, making it less secure compared to modern encryption standards.</p>
+
+<h2>Key Components of 3DES:</h2>
+<ul>
+    <br><li><strong>Keying Options:</strong>
+    <ul>
+        <br><li><strong>Single DES (DES-1):</strong> In this mode, all three DES operations use the same 56-bit key.</li>
+        <br><li><strong>Double DES (DES-2):</strong> In this mode, two independent 56-bit keys are used, resulting in a 112-bit effective key length.</li>
+      <br><li><strong>Triple DES (DES-3):</strong> In this mode, three independent 56-bit keys are used, resulting in a 168-bit effective key length.</li>
+    </ul>
+  </li>
+  <br><li><strong>Keying Modes:</strong>
+    <ul>
+        <br><li><strong>Encrypt-Decrypt-Encrypt (EDE):</strong> The standard mode of operation for 3DES, where plaintext is encrypted with one key, decrypted with another key, and encrypted again with a third key.</li>
+        <br><li><strong>Encrypt-Encrypt-Encrypt (EEE):</strong> A variant of 3DES where all three operations use the same key, providing backward compatibility with single DES but offering no additional security benefits.</li>
+    </ul>
+  </li>
+  <br><li><strong>Encryption Process:</strong>
+    <ul>
+        <br><li>Each block of plaintext undergoes three stages of encryption, with each stage using a different subkey derived from the main encryption key using a key schedule algorithm.</li>
+        <br><li>The encryption process involves substitution, permutation, and mixing operations, similar to DES, but applied in triplicate to each block.</li>
+    </ul>
+  </li>
+</ul>
+
+<h2>Advantages and Limitations of 3DES:</h2>
+<p><strong>Advantages:</strong></p>
+<ul>
+    <br><li>3DES offers stronger security compared to single DES, especially when using the triple keying option (DES-3), which provides a 168-bit effective key length.</li>
+    <br><li>It is widely supported and interoperable with legacy systems that require backward compatibility with DES.</li>
+</ul>
+<p><strong>Limitations:</strong></p>
+<ul>
+    <br><li>3DES is slower and less efficient than modern encryption algorithms, such as AES, due to its repeated application of the DES cipher.</li>
+    <br><li>The effective key length of 3DES is limited to 56 bits when using single keying, making it susceptible to brute-force attacks.</li>
+</ul>
+
+<h2>Common Use Cases:</h2>
+<ul>
+    <br><li><strong>Legacy Systems:</strong> 3DES may be used in legacy systems or older software applications that have not yet migrated to more secure encryption standards.</li>
+    <br><li><strong>Financial Transactions:</strong> 3DES is commonly used in the financial industry for securing electronic payment transactions, ATM transactions, and point-of-sale (POS) terminals.</li>
+    <br><li><strong>Government Applications:</strong> 3DES is utilized in government and military applications where backward compatibility with DES is required or where regulatory compliance mandates its use.</li>
+</ul>
+
+<br><p>In summary, 3DES is a symmetric-key block cipher encryption algorithm that applies the DES cipher multiple times to enhance security. While it offers stronger security compared to single DES, it is less efficient and less secure than modern encryption standards like AES. Organizations should consider migrating to more secure encryption algorithms for new implementations and upgrades.</p>
+</div>
+</body>
+</html>

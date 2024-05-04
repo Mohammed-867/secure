@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Security</title>
+
+    <style>
+        body {
+          background-color: rgb(37, 18, 121);
+          font-family: "Poppins", sans-serif;
+          font-weight: 400;
+          font-style: normal;
+          color: rgba(255, 255, 255, 0.884);
+          text-align: justify;
+          font-size: 21px;
+        }
+        
+        h1 {
+          color: rgb(255, 255, 255);
+          text-align: center;
+          font-family: "Poppins", sans-serif;
+          font-weight: 400;
+          font-style: normal;
+        } 
+        .imortance-cyber{
+          margin : 0px 10rem 0px 10rem
+        }
+        
+        
+        </style>
+
+</head>
+<body>
+
+<h1>AES Overview</h1><br>
+<div class="imortance-cyber">
+<p>AES or Advanced Encryption Standard, is a symmetric-key block cipher encryption algorithm widely used in cryptography. Here's an overview of AES and its key components:
+</p>
+<h2>What is AES?</h2>
+<p><strong>Symmetric-Key Encryption:</strong> AES is a symmetric-key encryption algorithm, meaning it uses the same secret key for both encryption and decryption. This key must be kept confidential between the communicating parties.</p>
+<p><strong>Block Cipher:</strong> AES operates on fixed-size blocks of plaintext and ciphertext, typically 128 bits in length. It encrypts each block independently using the same key.</p>
+<p><strong>Substitution-Permutation Network (SPN):</strong> AES employs an SPN structure, where each round consists of substitution, permutation, and mixing operations. These operations introduce confusion and diffusion to the plaintext, making it resistant to cryptanalysis.</p>
+<p><strong>Key Length:</strong> AES supports three key lengths: 128 bits, 192 bits, and 256 bits. The longer the key, the stronger the encryption. AES-128, AES-192, and AES-256 refer to the different key lengths used in AES encryption.</p>
+
+<h2>Key Components of AES:</h2>
+<ul>
+    <br><li><strong>SubBytes Transformation:</strong> AES uses a substitution step called SubBytes, where each byte of the block is replaced with another byte according to a fixed substitution table (S-box). This introduces non-linearity into the encryption process.</li>
+    <br><li><strong>ShiftRows Transformation:</strong> AES performs a permutation step called ShiftRows, where the bytes in each row of the block are shifted cyclically to the left. This ensures that each byte is affected by the encryption process.</li>
+    <br><li><strong>MixColumns Transformation:</strong> AES applies a mixing operation called MixColumns, where each column of the block is multiplied by a fixed polynomial in a finite field. This provides diffusion of the plaintext bits throughout the block.</li>
+    <br><li><strong>AddRoundKey Transformation:</strong> AES combines the plaintext with a round key derived from the main encryption key using a key schedule algorithm. This XOR operation ensures that the encryption depends on both the plaintext and the secret key.</li>
+</ul>
+
+<h2>Advantages of AES:</h2>
+<ul>
+    <br><li><strong>Security:</strong> AES is widely regarded as a secure encryption algorithm, offering strong protection against various cryptographic attacks, including brute-force attacks, differential cryptanalysis, and linear cryptanalysis.</li>
+    <br><li><strong>Efficiency:</strong> AES is computationally efficient and suitable for use in resource-constrained environments, such as embedded systems, mobile devices, and internet of things (IoT) devices.</li>
+    <br><li><strong>Standardization:</strong> AES has been standardized by the National Institute of Standards and Technology (NIST) and is widely adopted as a government and industry standard for data encryption.</li>
+    <br><li><strong>Flexibility:</strong> AES supports multiple key lengths, allowing users to choose the appropriate level of security based on their specific requirements and constraints.</li>
+</ul>
+
+<h2>Common Use Cases:</h2>
+<ul>
+    <br><li><strong>Data Encryption:</strong> AES is commonly used to encrypt sensitive data stored on computers, servers, databases, and cloud storage platforms, protecting it from unauthorized access and data breaches.</li>
+    <br><li><strong>Network Security:</strong> AES is used to secure network communication protocols, such as HTTPS, TLS/SSL, IPsec, and Wi-Fi encryption (WPA2), ensuring the confidentiality and integrity of data transmitted over networks.</li>
+    <br><li><strong>Disk Encryption:</strong> AES is employed to encrypt disk drives, partitions, and removable storage devices, such as USB drives and external hard drives, preventing unauthorized access to stored data in case of loss or theft.</li>
+    <br><li><strong>File Encryption:</strong> AES is used to encrypt individual files and folders, providing an additional layer of security for sensitive documents, images, videos, and other digital assets.</li>
+</ul>
+
+<br><p>In summary, AES is a widely used symmetric-key block cipher encryption algorithm known for its security, efficiency, and standardization. It is an essential component of modern cryptography and is employed in various applications to protect sensitive data and ensure the confidentiality and integrity of digital communications.</p>
+</div>
+</body>
+</html>

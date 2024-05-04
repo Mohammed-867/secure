@@ -1,0 +1,130 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> Register </title> 
+        <style>
+     body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f0faff;
+}
+        form
+  input[type="submit"] {
+  margin-top: 15px;
+  padding: none;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.wrapper {
+  position: relative;
+  max-width: 470px;
+  width: 100%;
+  border-radius: 12px;
+  padding: 20px
+    30px
+    120px;
+  background: #022fab;
+  box-shadow: 0
+    5px
+    10px
+    rgba(
+      0,
+      0,
+      0,
+      0.1
+    );
+  overflow: hidden;
+}
+
+          
+.word{
+                color: #FFFFFF;
+                font-style: oblique;
+                font-weight: bold;
+            }
+.word
+input {
+  border: 1px
+    solid
+    #aaa;
+}
+.word  input:focus {
+  box-shadow: 0
+    1px 0
+    #ddd;
+}
+form
+  input {
+  height: 60px;
+  outline: none;
+  border: none;
+  padding: 0
+    15px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #333;
+  border-radius: 8px;
+  background: #fff;
+}
+          
+            .btn {
+                padding: 10px 40px;
+                background-color:#ffffff;
+                color: #000000;
+                font-style: oblique;
+                font-weight: bold;
+                border-radius: 10px;
+            }
+.bottom
+  a{
+    color: #333;
+  opacity: 0.6;
+  }
+.bottom 
+  a{position: absolute;
+  left: 50%;
+  bottom: -86%;
+  transform: translateX(
+    -50%
+  );
+  width: calc(
+    100% +
+      220px
+  );
+  padding: 20px
+    140px;
+  border-radius: 50%;
+  height: 100%;
+  background: #fff;
+  transition: all
+    0.6s
+    ease;
+
+  }
+  
+         
+        </style>        
+    </head>
+    <body></br></br></br></br></br><section class="wrapper">
+        <div align="center">
+          <div align="center" class="border">
+             <div class="header">
+                <h1 class="word">Register</h1>
+             </div></br></br></br>
+            <h2 class="word">
+                <form action="{{ url_for('register') }}" method="post">
+                  <div class="msg">{{ msg }}</div>
+                    <input id="username" name="username" type="text" placeholder="Enter Your Username" class="textbox"/></br></br>
+                    <input id="password" name="password" type="password" placeholder="Enter Your Password" class="textbox"/></br></br>
+                    <input id="email" name="email" type="text" placeholder="Enter Your Email ID" class="textbox"/></br></br>
+                    <input type="submit" class="btn" value="Sign Up"></br>
+                </form>
+            </h2>
+            <p class="bottom">Already have an account?  <a class="bottom" href="{{url_for('login1')}}"> Sign In here</a></p>
+          </div>
+        </div></section>
+    </body>
+</html>

@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../frontend--main/finexo-html/fonts"
+		},
+		{
+			"path": "../frontend--main/finexo-html/images"
+		},
+		{
+			"path": "../frontend--main/finexo-html/js"
+		}
+	],
+	"settings": {}
+}
